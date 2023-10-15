@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- convertion du fichier java en structure XML -->
+<!ELEMENT BanqueService (conversion)>
+<!ELEMENT conversion (montant)>
+<!ELEMENT montant (#PCDATA)>
