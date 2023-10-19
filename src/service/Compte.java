@@ -4,7 +4,7 @@ public class Compte {
 	private int code;
 	private int solde;
 	private String dateCreation;
-	
+
 	public Compte(int code, int solde, String dateCreation) {
 		super();
 		this.code = code;

@@ -1,8 +1,20 @@
 package service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BanqueService {
-	public double conversion (double montant) 
-	{
+	List<Compte> comptes = new ArrayList<Comptes>();
+
+	public List<Compte> getComptes() {
+		return comptes;
+	}
+
+	public Compte getCompte(int x) {
+		return comptes.get(x);
+	}
+
+	public double conversion(double montant) {
 		return montant * 3.36;
 	}
 }
