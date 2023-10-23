@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- convertion du fichier java en structure XML -->
-<!ELEMENT BanqueService (conversion, getComptes, getCompte)>
+<!ELEMENT BanqueService (conversion,getCompte,getComptes)>
 <!ELEMENT conversion (montant)>
 <!ELEMENT montant (#PCDATA)>
-<!ELEMENT getComptes (Compte+)>
 <!ELEMENT getCompte (Compte)>
-<!ELEMENT Compte (code, solde, dateCreation)>
+<!ELEMENT getComptes (Compte+)>
+<!ELEMENT Compte (code,solde,date)>
+<!ELEMENT code (#PCDATA)>
 <!ELEMENT solde (#PCDATA)>
-<!ELEMENT solde (#PCDATA)>
-<!ELEMENT dateCreation (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
