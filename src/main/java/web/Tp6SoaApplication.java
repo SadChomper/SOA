@@ -3,14 +3,15 @@ package web;
 import entities.Compte;
 import entities.EtatCompte;
 import entities.TypeCompte;
-import repositories.CompteRepository;
-import java.util.Date;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import repositories.CompteRepository;
+
+import java.util.Date;
 
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = "repositories") // Active la configuration des dépôts JPA

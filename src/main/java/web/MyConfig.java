@@ -1,5 +1,6 @@
-/*package web;
+package web;
 
+import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,4 +12,4 @@ public class MyConfig {
         jerseyServlet.register(CompteRestJaxRSAPI.class);
         return jerseyServlet;
     }
-}*/
+}
